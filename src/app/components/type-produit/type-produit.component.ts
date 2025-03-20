@@ -35,19 +35,25 @@ export class TypeProduitComponent {
       }
     });
   }
-
   deleteProduitById(id: number): void {
-    this.pService.deleteTypeProduitById(id).subscribe({
-      next: () => {
-        console.log('Produit supprimé avec succès');
-        this.loadProduits();
-      },
-      error: (err) => {
-        console.error('Erreur lors de la suppression du produit', err);
-      }
-    });
+    // Afficher une fenêtre de confirmation avant de supprimer le produit
+    const confirmation = window.confirm('Êtes-vous sûr de vouloir supprimer ce produit ?');
+  
+    if (confirmation) {
+      this.pService.deleteTypeProduitById(id).subscribe({
+        next: () => {
+          console.log('Produit supprimé avec succès');
+          this.loadProduits();
+        },
+        error: (err) => {
+          console.error('Erreur lors de la suppression du produit', err);
+        }
+      });
+    } else {
+      console.log('Suppression annulée');
+    }
   }
-
+  
   goToEdit(id: number): void {
     this.router.navigate(['edit_type_produit', id]);
   }

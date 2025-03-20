@@ -21,6 +21,8 @@ import { BuyProductComponent } from './components/buy-product/buy-product.compon
 
 import { BuyProductResolverService } from './services/buy-product-resolver.service';
 import { ProduitUserComponent } from './components/produit-user/produit-user.component';
+import { CamionsComponent } from './components/camions/camions.component';
+import { CiternesComponent } from './components/citernes/citernes.component';
 
 
 const routes: Routes = [
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'commandes', component: CommandesComponent },
   { path: 'produits/:id', component: ProduitsParTypeComponent },
   { path: 'livraisons', component: LivraisonsComponent },
+  { path: 'camions', component: CamionsComponent },
   { path: 'addcommande', component: AddCommandeComponent },
   { path: 'addlivraison', component: AddLivraisonComponent },
   { path: 'editcommande/:id', component: EditCommandeComponent },
@@ -37,6 +40,7 @@ const routes: Routes = [
   { path: 'type_produit', component: TypeProduitComponent },
   { path: 'edit_type_produit/:id', component: EditTypeProduitComponent },
   { path: 'addProduit/:typeId', component: AddProduitComponent },
+  { path: 'citernes', component: CiternesComponent },
   
 
 

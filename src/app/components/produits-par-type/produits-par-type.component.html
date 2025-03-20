@@ -6,7 +6,7 @@
 <h2 class="title-text">Produits du Type : {{ typeName }}</h2>
 
 <!-- Bouton pour ajouter un produit -->
-<button class="btn" (click)="addProduit()">Ajouter un produit</button>
+<button class="single_page_btn d-none d-sm-block add btn btn-outline-warning" (click)="addProduit()"><i class="fa fa-plus-circle">&nbsp;&nbsp;</i><b>Ajouter un produit</b></button>
 
 <div class="produits-container">
   <div *ngFor="let produit of produits" class="produit-card">

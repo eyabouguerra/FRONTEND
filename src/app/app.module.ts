@@ -35,6 +35,8 @@ import { CartComponent } from './components/cart/cart.component';
 
 import { BuyProductComponent } from './components/buy-product/buy-product.component';
 import { ProduitUserComponent } from './components/produit-user/produit-user.component';
+import { CamionsComponent } from './components/camions/camions.component';
+import { CiternesComponent } from './components/citernes/citernes.component';
 
 
 
@@ -66,6 +68,8 @@ import { ProduitUserComponent } from './components/produit-user/produit-user.com
     CartComponent,
     BuyProductComponent,
     ProduitUserComponent,
+    CamionsComponent,
+    CiternesComponent
   
   
   ],
@@ -89,4 +93,4 @@ import { ProduitUserComponent } from './components/produit-user/produit-user.com
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule  { }

@@ -1,41 +1,46 @@
-.produits-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;  /* Adjust gap here */
-    justify-content: center;
-    margin-top: 20px;
-}
-
-
-section{
+section {
     margin-top: -45em;
     margin-left: 20em;
 }
 
-
 .title-text, .btn {
     text-align: center;
     display: block;
-    margin: 10px auto; /* Mettre un petit espace mais pas trop */
+    margin: 10px auto;
 }
 
-app-dash-receptionnaire {
-    border: 1px solid red; /* Pour voir son espace */
-    min-height: 100px; /* Teste avec un height minimum */
+.add-btn {
+    background-color: black;
+    border: 2px solid yellow;
+    padding: 10px 12px;
+    border-radius: 5px;
+    color: rgb(198, 210, 65);
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    width: 20%;  /* Adjust the width as needed */
+}
+
+.produits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .produit-card {
     position: relative;
-    width: 350px; /* Largeur des cartes */
+    width: 350px;
     background-image: url('/assets/img/a1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 25px; /* Espacement interne */
+    padding: 25px;
     color: white;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 20px; /* Espace entre les cartes */
+    margin-bottom: 20px;
 }
 
 .produit-card::before {
@@ -55,40 +60,40 @@ app-dash-receptionnaire {
 }
 
 .produit-card b {
-    font-size: 1.4em; /* Taille de la police */
+    font-size: 1.4em;
 }
 
 .produit-card span {
     color: red;
-    font-size: 1.4em; /* Taille de la police */
+    font-size: 1.4em;
 }
 
 .button-group {
     display: flex;
     justify-content: center;
-    gap: 12px; /* Espace entre les boutons */
-    margin-top: 15px; /* Espace au-dessus des boutons */
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .button-group button {
     background: transparent;
     border: 2px solid yellow;
-    padding: 10px 12px; /* Espacement interne */
+    padding: 10px 12px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-size: 1.2em; /* Taille de la police */
+    font-size: 1.2em;
 }
 
 .btn {
     display: block;
-    margin: 10px auto; /* Centrer le bouton */
-    width: 15%; /* Largeur du bouton */
-    background-color: yellow;
+    margin: 10px auto;
+    width: 15%;
+    background-color: black;
     border: 2px solid yellow;
     padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: rgb(198, 210, 65);
     cursor: pointer;
     font-size: 1.2em;
     text-align: center;
@@ -96,5 +101,5 @@ app-dash-receptionnaire {
 
 .title-text {
     text-align: center;
-    margin-bottom: 20px; /* Espace sous le titre */
-}   
+    margin-bottom: 20px;
+}

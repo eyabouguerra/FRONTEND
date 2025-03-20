@@ -17,7 +17,7 @@
               <form [formGroup]="addProduitForm" (ngSubmit)="addProduit()">
                   <!-- Champ Nom -->
                   <div class="mb-3">
-                      <input formControlName="name" type="text" class="form-control" placeholder="Nom du produit">
+                      <input formControlName="name" type="text" class="form-control" placeholder="Nom du Type produit">
                       <div *ngIf="addProduitForm.get('name')?.invalid && addProduitForm.get('name')?.touched" class="text-danger">
                           Nom du produit est requis.
                       </div>
