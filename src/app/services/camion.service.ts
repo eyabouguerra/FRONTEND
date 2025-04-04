@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -14,6 +14,9 @@ export class CamionService {
   // Récupérer tous les camions
   getCamions(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
+  }
+  getCamion(id: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 
   // Ajouter un nouveau camion
@@ -30,4 +33,17 @@ export class CamionService {
   deleteCamion(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
+    // Récupérer les informations du camion par ID de livraison
+    getCamionByLivraisonId(livraisonId: string): Observable<any> {
+      return this.http.get<any>(`${this.apiUrl}/${livraisonId}`);
+
+}
+// Méthode dans le CamionService pour récupérer les camions par marque
+// CamionService
+getCamionsByMarque(marque: string): Observable<any[]> {
+  return this.http.get<any[]>(`${this.apiUrl}/marques/${marque}`);
+}
+
+
+
 }

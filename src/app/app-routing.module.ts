@@ -23,6 +23,7 @@ import { BuyProductResolverService } from './services/buy-product-resolver.servi
 import { ProduitUserComponent } from './components/produit-user/produit-user.component';
 import { CamionsComponent } from './components/camions/camions.component';
 import { CiternesComponent } from './components/citernes/citernes.component';
+import { CompartimentsComponent } from './components/compartiments/compartiments.component';
 
 
 const routes: Routes = [
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'edit_type_produit/:id', component: EditTypeProduitComponent },
   { path: 'addProduit/:typeId', component: AddProduitComponent },
   { path: 'citernes', component: CiternesComponent },
+  { path: 'compartiments', component: CompartimentsComponent },
   
 
 
